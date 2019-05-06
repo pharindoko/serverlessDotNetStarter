@@ -1,5 +1,4 @@
-# ServerlessNETSample
-
+# serverlessDotNetStarter
 Sample shows how to:
 - deploy NET Core solution in __AWS cloud__ using:
   - Lambda
