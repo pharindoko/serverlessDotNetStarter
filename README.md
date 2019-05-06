@@ -26,7 +26,7 @@ dotnet --version
 ```bash
 # clone solution
 git clone https://github.com/pharindoko/serverlessDotNetSample.git
-cd serverlessDotNetSample
+cd serverlessDotNetStarter
 # install dotnet references described in csproj file
 dotnet restore AwsDotnetCsharp.csproj
 # install Lambda NET Mock Test Tool
