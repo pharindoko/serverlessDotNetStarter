@@ -1,5 +1,5 @@
 # serverlessDotNetStarter
-Sample shows how to:
+This template is meant as a starter template for serverless framework with following scope:
 - deploy NET Core solution in __AWS cloud__ using:
   - Lambda
   - Api Gateway
