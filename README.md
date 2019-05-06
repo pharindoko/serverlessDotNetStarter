@@ -1,6 +1,6 @@
 # serverlessDotNetStarter
 This template is meant as a starter template for serverless framework with following scope:
-- deploy NET Core solution in __AWS cloud__ using:
+- deploy C# / NET Core 2.1 solution in __AWS cloud__ using:
   - Lambda
   - Api Gateway
 - debug and test solution locally in __Visual Studio Code__
@@ -30,7 +30,8 @@ cd serverlessDotNetStarter
 # install dotnet references described in csproj file
 dotnet restore AwsDotnetCsharp.csproj
 # install Lambda NET Mock Test Tool
-./setup.sh
+# more details: https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool
+dotnet tool install -g Amazon.Lambda.TestTool-2.1
 ```
 
 ## Debug & Test locally
