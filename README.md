@@ -4,7 +4,7 @@ This template is meant as a starter template for serverless framework with follo
   - Lambda
   - Api Gateway
 - debug and test solution locally in __Visual Studio Code__
-- works on MacOS and should be operating system independent
+- works operating system independent
 
 ## Prerequisites to install
 - [NodeJS](https://nodejs.org/en/)
