@@ -53,7 +53,24 @@ Press __F5__ to start Debugging and local testing of lambda function
  }
 
 ```
+
 __Mind:__ For a successful response querystringParameter __foo__ must be inserted
+
+__Mind:__ [Verify that the right version has been set in /.vscode/launch.json:](https://github.com/pharindoko/serverlessDotNetStarter/blob/a9cacc1a598c65810a4a1458d3ce13391335fb79/.vscode/launch.json#L12)
+
+  #### how to get the version ?
+  <pre><code>
+   dotnet lambda-test-tool-2.1
+
+   Result:
+   AWS .NET Mock Lambda Test Tool (<b>0.9.2</b>)
+  </pre></code>
+
+  #### Edit property in .vscode/launch.json file (placeholders marked version bold)
+  <pre><code>
+  "program": "/Users/uid10804/.dotnet/tools/.store/amazon.lambda.testtool-2.1/<b>{Set same toolversion}</b>/amazon.lambda.testtool-2.1/<b>{Set same toolVersion}</b>/tools/netcoreapp2.1/any/Amazon.Lambda.TestTool.dll",
+  </pre></code>
+
 
 
 ## Build Package 
