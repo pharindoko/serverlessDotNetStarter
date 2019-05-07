@@ -130,8 +130,7 @@ __Mind:__ For a successful response querystringParameter __foo__ must be inserte
 
 ###### Can I use the solution with Visual Studio IDE (2017 or 2019)
 
-Yes. Follow this guideline:
-https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio
+1. Yes. [Here`s the guideline.](https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio)
 
 ######  How to add an api key
 
