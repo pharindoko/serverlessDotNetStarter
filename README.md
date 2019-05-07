@@ -40,7 +40,14 @@ I followed this guideline: (Please read in case of issues)
 
 [How to Debug .NET Core Lambda Functions Locally with the Serverless Framework](https://itnext.io/how-to-debug-net-core-lambda-functions-locally-with-the-serverless-framework-dd1670bc22e2)
 
-Press __F5__ to start Debugging and local testing of lambda function
+1. Open Visual Studio Code
+
+```bash
+# open Visual Studio Code
+code .
+```
+
+2. Press __F5__ to start Debugging and local testing of lambda function
 
 - Hint: Lambda Mock Test Tool should be started
 - Insert this json value in input textbox for a first test:
@@ -120,6 +127,11 @@ curl https://{api}.execute-api.us-east-1.amazonaws.com/dev/hello?foo=test
 __Mind:__ For a successful response querystringParameter __foo__ must be inserted
 
 ## FAQ
+
+###### Can I use the solution with Visual Studio IDE (2017 or 2019)
+
+Yes. Follow this guideline:
+https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio
 
 ######  How to add an api key
 
