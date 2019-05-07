@@ -26,7 +26,7 @@ dotnet --version
 ## Installation
 ```bash
 # clone solution
-git clone https://github.com/pharindoko/serverlessDotNetSample.git
+git clone https://github.com/pharindoko/serverlessDotNetStarter.git
 cd serverlessDotNetStarter
 # install dotnet references described in csproj file
 dotnet restore AwsDotnetCsharp.csproj
