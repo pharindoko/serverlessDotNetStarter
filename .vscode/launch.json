@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "/Users/uid10804/.dotnet/tools/.store/amazon.lambda.testtool-2.1/0.9.2/amazon.lambda.testtool-2.1/0.9.2/tools/netcoreapp2.1/any/Amazon.Lambda.TestTool.dll",
+            "program": "/Users/uid10804/.dotnet/tools/.store/amazon.lambda.testtool-2.1/0.9.5/amazon.lambda.testtool-2.1/0.9.5/tools/netcoreapp2.1/any/Amazon.Lambda.TestTool.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",

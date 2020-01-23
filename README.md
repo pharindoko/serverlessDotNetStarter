@@ -9,9 +9,9 @@ This template is meant as a starter template for serverless framework with follo
 ## Prerequisites to install
 - [NodeJS](https://nodejs.org/en/)
 - [Serverless Framework CLI](https://serverless.com)
-- [.NET Core](https://dotnet.microsoft.com/)
+- [.NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1)
 - [Visual Studio Code](https://code.visualstudio.com/)
-
+- [C# Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
 Verify that everything is installed
 ```bash
@@ -33,6 +33,12 @@ dotnet restore AwsDotnetCsharp.csproj
 # install Lambda NET Mock Test Tool
 # more details: https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool
 dotnet tool install -g Amazon.Lambda.TestTool-2.1
+```
+
+For VS Code Debugging:
+
+```bash
+code --install-extension ms-vscode.csharp
 ```
 
 ## Debug & Test locally
