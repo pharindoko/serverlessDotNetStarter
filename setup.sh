@@ -1,1 +1,1 @@
-dotnet tool install --global Amazon.Lambda.TestTool-2.1 --version 0.9.2
+dotnet tool install --global Amazon.Lambda.TestTool-2.1 --version 0.9.5
