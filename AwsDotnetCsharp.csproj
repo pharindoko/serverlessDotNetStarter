@@ -12,7 +12,7 @@
     <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="1.0.0" />
     <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="4.1.0" />
     <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
-    <PackageReference Include="Amazon.Lambda.RuntimeSupport" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.RuntimeSupport" Version="1.1.1" />
     <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.7.0" />
   </ItemGroup>
 </Project>
