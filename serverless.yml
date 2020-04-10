@@ -19,7 +19,7 @@ service: myService # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: dotnetcore2.1
+  runtime: dotnetcore3.1
 
 # you can overwrite defaults here
 #  stage: dev
@@ -50,21 +50,38 @@ package:
 
 functions:
   hello:
-    handler: AwsDotnetCsharp::AwsDotnetCsharp.Handler::Hello
+    handler: AwsDotnetCsharp::AwsDotnetCsharp.Handler::HelloWorld
 
     # you can add packaging information here
     package:
-      artifact: bin/release/netcoreapp2.1/hello.zip
+      artifact: bin/release/netcoreapp3.1/hello.zip
     #  exclude:
     #    - exclude-me.js
     #    - exclude-me-dir/**
 
-#    The following are a few example events you can configure
-#    NOTE: Please make sure to change your handler code to work with those events
-#    Check the event documentation for details
+    #    The following are a few example events you can configure
+    #    NOTE: Please make sure to change your handler code to work with those events
+    #    Check the event documentation for details
     events:
       - http:
           path: hello
+          method: get
+  getquerystring:
+    handler: AwsDotnetCsharp::AwsDotnetCsharp.Handler::GetQuerystring
+
+    # you can add packaging information here
+    package:
+      artifact: bin/release/netcoreapp3.1/hello.zip
+    #  exclude:
+    #    - exclude-me.js
+    #    - exclude-me-dir/**
+
+    #    The following are a few example events you can configure
+    #    NOTE: Please make sure to change your handler code to work with those events
+    #    Check the event documentation for details
+    events:
+      - http:
+          path: getquerystring
           method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
