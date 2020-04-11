@@ -17,7 +17,7 @@ This template is meant as a starter template for serverless framework with follo
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [C# Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
-Verify that everything is installed
+Verify that everything is installed (copy & paste)
 
 ```bash
 # package manager for nodejs
@@ -28,11 +28,12 @@ sls -v
 dotnet --version
 ```
 
-## Installation
+## Installation (copy & paste)
 
 ```bash
 # clone solution
-git clone https://github.com/pharindoko/serverlessDotNetStarter.git
+# serverless create --template-url https://github.com/pharindoko/serverlessDotNetStarter --path {SERVICE_NAME}
+serverless create --template-url https://github.com/pharindoko/serverlessDotNetStarter --path serverlessDotnetstarter
 cd serverlessDotNetStarter
 # restore / install dotnet references described in csproj file
 dotnet restore AwsDotnetCsharp.csproj
@@ -44,9 +45,8 @@ dotnet tool install -g Amazon.Lambda.Tools
 dotnet tool install --global Amazon.Lambda.TestTool-3.1
 dotnet tool list -g
 
-# result:
+# expected dotnet packages:
 #
-# dotnet packages
 # Package Id                      Version      Commands
 ------------------------------------------------------------------------
 #amazon.lambda.testtool-3.1      0.10.0       dotnet-lambda-test-tool-3.1
