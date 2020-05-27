@@ -73,12 +73,20 @@ code .
 ```
 
 #### 2. Edit property in .vscode/launch.json file (placeholders marked version bold)
+You need to set 
+ - the correct {user} in the file path
+ - the right toolversion (see below -> how to get the right tool version ?)
+
 
   <pre><code>
-  "program": "/Users/{user}/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{Set same toolversion}</b>/amazon.lambda.testtool-3.1/<b>{Set same toolVersion}</b>/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
-  </pre></code>
+  "program": "/Users/<b>{user}</b>/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{Set toolversion}</b>/amazon.lambda.testtool-3.1/<b>{Set toolVersion}</b>/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
 
-> how to get the version ?
+# sample: 
+# /Users/user123/.dotnet/tools/.store/amazon.lambda.testtool-3.1/0.10.0/amazon.lambda.testtool-3.1/0.10.0/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
+</pre></code>
+
+
+> **how to get the right tool version ?**
 
   <pre><code>
    dotnet tool list -g
@@ -89,7 +97,7 @@ code .
     amazon.lambda.testtool-3.1      <b>e.g. version 0.10.0</b>       dotnet-lambda-test-tool-3.1
   </pre></code>
 
-#### 3. Press **F5** to start Debugging and local testing of lambda function
+#### 3. Press **F5** to start the debugging and local testing of lambda function
 
 - Hint: Lambda Mock Test Tool should be started locally on port 5050
 - Click on Button "Execute Function"
