@@ -75,7 +75,7 @@ code .
 #### 2. Edit property in .vscode/launch.json file (placeholders marked version bold)
 
   <pre><code>
-  "program": "/Users/{user}/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{Set same toolversion}</b>/amazon.lambda.testtool-3.1/<b>{Set same toolVersion}</b>/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.dll",
+  "program": "/Users/{user}/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{Set same toolversion}</b>/amazon.lambda.testtool-3.1/<b>{Set same toolVersion}</b>/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
   </pre></code>
 
 > how to get the version ?
