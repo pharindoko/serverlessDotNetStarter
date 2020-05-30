@@ -9,18 +9,15 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "/Users/{user}/.dotnet/tools/.store/amazon.lambda.testtool-3.1/0.10.0/amazon.lambda.testtool-3.1/0.10.0/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
+      "program": "/Users/{user}/.dotnet/tools/dotnet-lambda-test-tool-3.1",
+      // More information:
+      // https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-code,
+      // https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-for-mac
       "args": [],
       "cwd": "${workspaceFolder}",
       "console": "internalConsole",
       "stopAtEntry": false,
       "internalConsoleOptions": "openOnSessionStart"
-    },
-    {
-      "name": ".NET Core Attach",
-      "type": "coreclr",
-      "request": "attach",
-      "processId": "${command:pickProcess}"
     }
   ]
 }

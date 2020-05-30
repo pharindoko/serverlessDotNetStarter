@@ -72,22 +72,34 @@ I followed this guideline: (Please read in case of issues)
 code .
 ```
 
-#### 2. Setup Amazon Lambda Testtool 
+#### 2. Setup Amazon Lambda Testtool
 
-Edit the "program" property in .vscode/launch.json file (placeholders marked version bold)
+Edit the "program" property in .vscode/launch.json file and update placeholder for {user} (placeholders marked in bold)
 
-Important: You need to set 
- - the correct {user} in the file path
- - the right toolversion (see below -> how to get the right tool version ?)
+##### For Windows:
 
-  <pre><code>
-  "program": "/Users/<b>{user}</b>/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{Set toolversion}</b>/amazon.lambda.testtool-3.1/<b>{Set toolVersion}</b>/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
-
-  # sample: 
-  # /Users/user123/.dotnet/tools/.store/amazon.lambda.testtool-3.1/0.10.0/amazon.lambda.testtool- 3.1/0.10.0/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
+<pre><code>
+"program": /Users/<b>{user}</b>/.dotnet/tools/dotnet-lambda-test-tool-3.1
 </pre></code>
 
-> **how to get the right tool version ?**
+##### For MacOs / Linux:
+
+<pre><code>
+"program": /Users/<b>{user}</b>/.dotnet/tools/dotnet-lambda-test-tool-3.1
+</pre></code>
+
+More information:
+
+- https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-code,
+- https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-for-mac
+
+In case of issues - try this:
+
+<pre><code>
+  "program": /Users/<b>{user}</b>/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{nuget-version}</b>/amazon.lambda.testtool-3.1/<b>{nuget-version}</b>/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
+</pre></code>
+
+> **how to get the right nuget version ?**
 
   <pre><code>
    dotnet tool list -g
