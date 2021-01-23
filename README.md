@@ -1,6 +1,6 @@
 # serverlessDotNetStarter ![.NET Core](https://github.com/pharindoko/serverlessDotNetStarter/workflows/.NET%20Core/badge.svg?branch=master)
 
-This template is meant as a starter template for serverless framework with following scope:
+Starter template for serverless framework with following scope:
 
 - deploy C# / NET Core 3.1 solution in **AWS cloud** using:
   - Lambda
