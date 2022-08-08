@@ -19,7 +19,7 @@ service: myService # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: dotnetcore3.1
+  runtime: dotnet6
 
 # you can overwrite defaults here
 #  stage: dev

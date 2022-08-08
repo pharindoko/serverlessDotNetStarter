@@ -11,6 +11,6 @@
   "profile": "default",
   "region": "eu-central-1",
   "configuration": "Release",
-  "framework": "netcoreapp3.1",
+  "framework": "dotnet6",
   "template": "serverless.yml"
 }

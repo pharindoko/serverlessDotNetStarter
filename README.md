@@ -2,7 +2,7 @@
 
 Starter template for serverless framework with following scope:
 
-- deploy C# / NET Core 3.1 solution in **AWS cloud** using:
+- deploy C# / NET 6 solution in **AWS cloud** using:
   - Lambda
   - Api Gateway
 - debug and test solution locally in **Visual Studio Code**
@@ -12,7 +12,7 @@ Starter template for serverless framework with following scope:
 
 - [NodeJS](https://nodejs.org/en/)
 - [Serverless Framework CLI](https://serverless.com)
-- [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 - [AWS-Lambda-DotNet](https://github.com/aws/aws-lambda-dotnet)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [C# Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
