@@ -96,7 +96,7 @@ More information:
 In case of issues - try this:
 
 <pre><code>
-  "program": /Users/<b>{user}</b>/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{nuget-version}</b>/amazon.lambda.testtool-3.1/<b>{nuget-version}</b>/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
+  "program": /Users/<b>{user}</b>/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{nuget-version}</b>/amazon.lambda.testtool-3.1/<b>{nuget-version}</b>/tools/net6.0/any/Amazon.Lambda.TestTool.WebTester31.dll",
 </pre></code>
 
 > **how to get the right nuget version ?**

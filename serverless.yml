@@ -54,7 +54,7 @@ functions:
 
     # you can add packaging information here
     package:
-      artifact: bin/release/netcoreapp3.1/hello.zip
+      artifact: bin/release/net6.0/hello.zip
     #  exclude:
     #    - exclude-me.js
     #    - exclude-me-dir/**
@@ -71,7 +71,7 @@ functions:
 
     # you can add packaging information here
     package:
-      artifact: bin/release/netcoreapp3.1/hello.zip
+      artifact: bin/release/net6.0/hello.zip
     #  exclude:
     #    - exclude-me.js
     #    - exclude-me-dir/**
