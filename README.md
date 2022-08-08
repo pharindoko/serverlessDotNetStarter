@@ -32,8 +32,8 @@ dotnet --version
 
 ```bash
 # clone solution
-# serverless create --template-url https://github.com/pharindoko/serverlessDotNetStarter --path {SERVICE_NAME}
-serverless create --template-url https://github.com/pharindoko/serverlessDotNetStarter --path serverlessDotnetstarter
+# serverless create --template-url https://github.com/TandukarRajan/serverlessDotNetStarter --path {SERVICE_NAME}
+serverless create --template-url https://github.com/TandukarRajan/serverlessDotNetStarter --path serverlessDotnetstarter
 cd serverlessDotNetStarter
 # restore / install dotnet references described in csproj file
 dotnet restore AwsDotnetCsharp.csproj
