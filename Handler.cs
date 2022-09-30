@@ -26,7 +26,7 @@ namespace AwsDotnetCsharp
         public APIGatewayProxyResponse GetQuerystring(APIGatewayProxyRequest request, ILambdaContext context)
         {
             APIGatewayProxyResponse response;
-            LogMessage(context, "Processing request started");
+            LogMessage(context, "Processing request startedd");
             if (request != null && request.QueryStringParameters.Count > 0)
             {
                 try
