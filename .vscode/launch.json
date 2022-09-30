@@ -9,7 +9,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "/Users/{user}/.dotnet/tools/dotnet-lambda-test-tool-3.1",
+      "program": "/Users/{userid}/.dotnet/tools/dotnet-lambda-test-tool-6.0",
       // More information:
       // https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-code,
       // https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-for-mac

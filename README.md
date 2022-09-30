@@ -1,8 +1,8 @@
-# serverlessDotNetStarter ![.NET Core](https://github.com/pharindoko/serverlessDotNetStarter/workflows/.NET%20Core/badge.svg?branch=master)
+# serverlessDotNetStarter ![.NET 6](https://github.com/pharindoko/serverlessDotNetStarter/workflows/.NET%20Core/badge.svg?branch=master)
 
 Starter template for serverless framework with following scope:
 
-- deploy C# / NET Core 3.1 solution in **AWS cloud** using:
+- deploy C# / NET 6 solution in **AWS cloud** using:
   - Lambda
   - Api Gateway
 - debug and test solution locally in **Visual Studio Code**
@@ -12,7 +12,7 @@ Starter template for serverless framework with following scope:
 
 - [NodeJS](https://nodejs.org/en/)
 - [Serverless Framework CLI](https://serverless.com)
-- [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 - [AWS-Lambda-DotNet](https://github.com/aws/aws-lambda-dotnet)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [C# Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
@@ -24,7 +24,7 @@ Verify that everything is installed (copy & paste)
 npm -v
 # serverless framework cli > 1.5
 sls -v
-# dotnet (cli) > 3.1
+# dotnet (cli) > 6.0
 dotnet --version
 ```
 
@@ -42,21 +42,21 @@ dotnet restore AwsDotnetCsharp.csproj
 # more details: https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool
 
 dotnet tool install -g Amazon.Lambda.Tools
-dotnet tool install --global Amazon.Lambda.TestTool-3.1
+dotnet tool install --global Amazon.Lambda.TestTool-6.0
 dotnet tool list -g
 
 # expected dotnet packages:
 #
 # Package Id                      Version      Commands
 ------------------------------------------------------------------------
-#amazon.lambda.testtool-3.1      0.10.0       dotnet-lambda-test-tool-3.1
-#amazon.lambda.tools             4.0.0        dotnet-lambda
+#amazon.lambda.testtool-6.0      0.12.4       dotnet-lambda-test-tool-6.0
+#amazon.lambda.tools             5.4.5        dotnet-lambda
 ```
 
 **For VS Code Debugging:**
 
 > ```bash
-> code --install-extension ms-dotnettools.csharp
+> code --install-extension ms-dotnettools.csharp --force
 > ```
 
 ## Debug & Test locally
@@ -76,27 +76,27 @@ code .
 
 Edit the "program" property in .vscode/launch.json file and update placeholder for {user} (placeholders marked in bold)
 
-##### For Windows:
+##### For Windows
 
 <pre><code>
-"program": /Users/<b>{user}</b>/.dotnet/tools/dotnet-lambda-test-tool-3.1
+"program": /Users/<b>{user}</b>/.dotnet/tools/dotnet-lambda-test-tool-6.0
 </pre></code>
 
-##### For MacOs / Linux:
+##### For MacOs / Linux
 
 <pre><code>
-"program": /Users/<b>{user}</b>/.dotnet/tools/dotnet-lambda-test-tool-3.1
+"program": /Users/<b>{user}</b>/.dotnet/tools/dotnet-lambda-test-tool-6.0
 </pre></code>
 
 More information:
 
-- https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-code,
-- https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-for-mac
+- <https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-code>,
+- <https://github.com/aws/aws-lambda-dotnet/tree/master/Tools/LambdaTestTool#configure-for-visual-studio-for-mac>
 
 In case of issues - try this:
 
 <pre><code>
-  "program": /Users/<b>{user}</b>/.dotnet/tools/.store/amazon.lambda.testtool-3.1/<b>{nuget-version}</b>/amazon.lambda.testtool-3.1/<b>{nuget-version}</b>/tools/netcoreapp3.1/any/Amazon.Lambda.TestTool.WebTester31.dll",
+  "program": /Users/<b>{user}</b>/.dotnet/tools/.store/amazon.lambda.testtool-6.0/<b>{nuget-version}</b>/amazon.lambda.testtool-6.0/<b>{nuget-version}</b>/tools/net6.0/any/Amazon.Lambda.TestTool.WebTester6.0.dll",
 </pre></code>
 
 > **how to get the right nuget version ?**
@@ -105,9 +105,9 @@ In case of issues - try this:
    dotnet tool list -g
 
    Result:
-    Package Id                      Version                   Commands                   
+    Package Id                      Version                   Commands
     ------------------------------------------------------------------------
-    amazon.lambda.testtool-3.1      <b>e.g. version 0.10.0</b>       dotnet-lambda-test-tool-3.1
+    amazon.lambda.testtool-6.0      <b>e.g. version 0.12.4</b>       dotnet-lambda-test-tool-6.0
   </pre></code>
 
 #### 3. Press **F5** to start the debugging and local testing of lambda function
@@ -123,7 +123,6 @@ In case of issues - try this:
 
 1. Select function to **getquerystring** (upper right dropdownlist)
 2. Insert this json value in the function input textbox for a first test:
-
 
     ```json
     {
@@ -204,13 +203,13 @@ curl https://{api}.execute-api.us-east-1.amazonaws.com/dev/getquerystring?foo=te
 ###### How to add an api key
 
 1. Setup API Key in serverless.yml file
-   https://serverless.com/framework/docs/providers/aws/events/apigateway/#setting-api-keys-for-your-rest-api
+   <https://serverless.com/framework/docs/providers/aws/events/apigateway/#setting-api-keys-for-your-rest-api>
 
 ###### How to add additional lambda functions
 
 1. Create a new C# Function in Handler.cs or use another file
 2. Add a new function to serverless.yml and reference the C# Function as handler
-   https://serverless.com/framework/docs/providers/aws/guide/functions/
+   <https://serverless.com/framework/docs/providers/aws/guide/functions/>
 
 ###### Destroy the stack in the cloud
 
@@ -225,4 +224,4 @@ sls remove
 
 ###### How can I change the lambda region or stack name
 
-Please have a look to the serverless guideline: https://serverless.com/framework/docs/providers/aws/guide/deploying/
+Please have a look to the serverless guideline: <https://serverless.com/framework/docs/providers/aws/guide/deploying/>
