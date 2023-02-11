@@ -33,7 +33,7 @@ dotnet --version
 ```bash
 # clone solution
 # serverless create --template-url https://github.com/pharindoko/serverlessDotNetStarter --path {SERVICE_NAME}
-serverless create --template-url https://github.com/pharindoko/serverlessDotNetStarter --path serverlessDotnetstarter
+serverless create --template-url https://github.com/pharindoko/serverlessDotNetStarter --path serverlessDotNetStarter
 cd serverlessDotNetStarter
 # restore / install dotnet references described in csproj file
 dotnet restore AwsDotnetCsharp.csproj
@@ -45,7 +45,7 @@ dotnet tool install -g Amazon.Lambda.Tools
 dotnet tool install --global Amazon.Lambda.TestTool-6.0
 dotnet tool list -g
 
-# expected dotnet packages:
+# required dotnet packages:
 #
 # Package Id                      Version      Commands
 ------------------------------------------------------------------------
